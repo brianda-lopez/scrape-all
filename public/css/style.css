@@ -1,0 +1,46 @@
+/* GLOBAL SETTINGS */
+/* ==================================================== */
+
+body { 
+    color: rgb(92, 92, 92);
+    font-family: 'Fresca', sans-serif;
+    overflow-x: hidden /* keep all of the content within the browser window */ 
+}
+
+
+[class*="col-"] {
+    padding: 1rem;
+}
+
+.container {
+    margin: auto;
+    text-align: center;
+}
+
+/* SPECIFIC SETTINGS */
+/* ==================================================== */
+
+.navbar-brand {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: rgb(1, 21, 109)!important
+}
+
+.background {
+    background: url("../img/theDodoHeader.jpg") no-repeat center center;
+    width: 100%;
+    height: 400px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.jumbotron {
+    height: 400px;
+    background: transparent;
+  }

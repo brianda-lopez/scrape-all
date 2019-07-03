@@ -1,0 +1,47 @@
+<!-- START JUMBOTRON -->
+
+  <div class="jumbotron text-center">
+    <div class="fixed fixed-background fixed-wrap">
+      <h1>Mongo Scraper</h1>
+      <p>thedodo.com Edition</p>
+
+      <button type="button" class="btn btn-secondary scrape-new"><a href="/scrape">Get the Articles</a></button>
+      <button type="button" class="btn btn-secondary clear-old">Clear the Articles</button>
+
+    </div>
+  </div>
+
+<!-- END JUMBOTRON -->
+
+<!-- START SCRAPED ARICLES -->
+
+  <div class="container">
+      {{#each articles}}
+        <div class="card">
+          <div class="card-header">
+            <a href="{{link}}" target="_blank" class="title">{{title}}</a>
+          </div>
+          <div class="card-body">
+            <p class="card-text">{{summary}}</p>
+            <a href="/save" class="btn btn-dark ml-auto">Save this Article</a>
+          </div>
+        </div>
+      {{/each}}
+  </div>
+
+
+<!-- END SCRAPED ARICLES -->
+
+<!-- START FOOTER -->
+
+<footer class="footer">
+  <div class="container">
+    <p>Scraping Only the Most Important Things -- News About Animals</p>
+  </div>
+</footer>
+
+
+<!-- END FOOTER -->
+
+<!-- SCRIPT FILES -->
+<script src="../public/js/index.js"></script>
